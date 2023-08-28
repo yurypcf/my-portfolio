@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>App</title>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    {{> includes}}
   </head>
   <body>
-    {{ message }}
+    {{> nav}}
+
+    <div class="homeImg">
+      <div class="homeDiv center">
+        <h1 class="titleMain">YURY CAVALCANTE</h1>
+        <h3>curious mind passionate for technology and arts</h3>
+      </div>
+      <div class="homeSouth">
+        <h4><a class="stealthLink subPmin padX0" href="#about-me">Read More</a></h4>
+        <button class="smoothScrollBtn" type="button"><img src="/images/Down-Arrow-White.png" width="30"/></button>
+      </div>
+    </div>
+
+    <div class="container-fluid aboutMe" id="about-me" >
+      <div class="container aboutMe">
+        <div class="row rowPad" >
+          <div class="col-md-4">
+            <img src="/images/IMAGE_02.png" class="circleImg"></img>
+          </div>
+          <div class="col-md-8">
+            <p class="pad20">
+              Welcome to my website.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed eleifend odio id ornare pharetra. Praesent quam turpis, feugiat sed euismod quis,
+              pretium sed erat. Sed nec metus metus. Nam non urna malesuada,
+              pharetra dui ut, lobortis nulla. Suspendisse id volutpat libero.
+              Fusce consequat mi non arcu malesuada, at egestas ligula dictum.
+              Nunc sagittis quam at nisi mollis eleifend. Vestibulum mollis mauris at elit dapibus,
+              laoreet convallis libero vestibulum. Aliquam nec metus viverra,
+              consectetur felis a, bibendum arcu. Vivamus et est et lorem cursus interdum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid softwareImg">
+      <div class="container softwareDiv">
+        <h1 class="leftTitle subTitle white" style="padding-top: 0px">SOFTWARE</h1>
+        <div class="row">
+          <div class="col-md-6 tilePadWide softTileBack col1Pad">
+              <h3 class="white regTitle cenX">RUBY</h3>
+              <h5 class="tileDesc subPmin white">
+                3 years developing for <a href="https://www.infinitepay.io/">Cloudwalk / Infinitepay</a>
+                backend services such as Payment Acquiring routines for Banks
+              </h5>
+          </div>
+          <div class="col-md-6 tilePadWide softTileBack col2Pad">
+              <h3 class="white regTitle cenX">NodeJS</h3>
+              <h5 class="tileDesc subPmin white">
+                Experience developing, testing and maintaining websites,
+                confident about using/learning any framework (ReactJS, NextJS, NestJS, etc)
+              </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 tilePadWide softTileBack col1Pad">
+              <h3 class="white regTitle cenX">RUST</h3>
+              <h5 class="tileDesc subPmin white">
+                After falling in love with the language, I've been
+                working in a lib wrapping <a href="https://www.igdb.com/">Twitch API IGDB</a>.
+                See below.
+              </h5>
+              <ul class="centerLinks">
+                  <li style="display:inline-block;">
+                      <a href="https://crates.io/crates/rusty_igdb"><p style="border-width:0px">IGDB API Wrapper for Rust</p></a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col-md-6 tilePadWide softTileBack col2Pad">
+              <h3 class="white regTitle cenX">WEB</h3>
+              <h5 class="tileDesc subPmin white">Experience with HTML, CSS, Javascript and bootstrap
+              to create this responsive website</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  {{> footer}}
+  <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

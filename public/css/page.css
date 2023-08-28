@@ -173,13 +173,6 @@ body, html {
   color: #b5b5b5;
 }
 
-.electronicsBack {
-  /* background-image: url("../images/IMG_1716.jpg"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .centerTitle {
   text-align: center;
   padding-bottom: 60px;
@@ -193,29 +186,6 @@ body, html {
   font-size: 2em;
   padding-left: 50px;
   padding-bottom: 40px;
-}
-
-.learnFilmsBtn {
-  border-color: #ffdbdb;
-  background-color: #ffdbdb;
-  color: #E62117;
-}
-
-.learnFilmsBtn:hover {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  background-color: white;
-  border-color: white;
-  color: #E62117;
-}
-
-.photoBack {
-  /* background-image: url("../images/IMG_7509.JPG"); */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* padding-left: 0px;
-  padding-right: 0px; */
 }
 
 .backBlur {
@@ -242,7 +212,7 @@ body, html {
 }
 
 @media (min-width: 768px) {
-  .softwareDiv, .electronicsDiv {
+  .softwareDiv {
       padding-top: 60px;
       padding-bottom: 80px;
   }
